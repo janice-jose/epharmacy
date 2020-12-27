@@ -1,0 +1,190 @@
+body {
+	font-family: Arial;
+	color: #211a1a;
+	font-size: 0.9em;
+  	/*background-image: linear-gradient(to right, #9999ff, #99ccff,#66ffff,#ffcc66,#ff9999,#ff66ff,#cc66ff);*/
+  	background-image: linear-gradient(to right, black, #669999, black);
+}
+
+#shopping-cart {
+	margin: 40px;
+}
+
+#shopping-cart table {
+	width: 100%;
+	background-color: #F0F0F0;
+}
+
+#shopping-cart table td {
+	background-color: #FFFFFF;
+}
+
+.txt-heading {
+	color: #211a1a;
+	border-bottom: 1px solid #E0E0E0;
+	overflow: auto;
+}
+
+.empty-btn{
+	margin-right: 5%;
+}
+
+.shop-btn{
+	margin-right: 5%;
+}
+
+#btnEmpty {
+	background-color: #ffffff;
+	border: #d00000 1px solid;
+	padding: 5px 10px;
+	color: #d00000;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+.tbl-cart {
+	font-size: 0.9em;
+}
+
+.tbl-cart th {
+	font-weight: normal;
+}
+
+.cart-item-image {
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.no-records {
+	text-align: center;
+	clear: both;
+	margin: 38px 0px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  position: relative;
+  top:50px;
+  left: 42%;
+  bottom: 50px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*
+#product-grid {
+	margin: 40px;
+}
+#product-grid .txt-heading {
+	margin-bottom: 18px;
+  	background-image: linear-gradient(to right, #9999ff, #99ccff,#66ffff,#66ff99,#ffff66,#ffcc66,#ff9999,#ff66ff,#cc66ff);
+}
+.btnAddAction {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    border: #E0E0E0 1px solid;
+    color: #211a1a;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.product-item {
+	float: left;
+	background: orange;
+	margin: 30px 30px 0px 0px;
+	border: #E0E0E0 1px solid;
+	height: 350px;			
+	width: 350px;
+    background-image: linear-gradient(to bottom right,#99ccff, #0099ff);
+}
+.product-image {
+	height: 250px;			
+	width: 250px;	
+}.inner-image{
+	float: center;
+	width: 200px;
+	height: 170px;
+justify-content: center;
+	vertical-align: center;
+}
+#grad {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+.clear-float {
+	clear: both;
+}
+
+.demo-input-box {
+	border-radius: 2px;
+	border: #CCC 1px solid;
+	padding: 2px 1px;
+}
+.product-tile-footer {
+    padding: 15px 15px 0px 15px;
+    overflow: auto;
+}
+
+.product-title {
+	margin-bottom: 20px;
+}
+
+.product-price {
+	float:left;
+}
+
+.cart-action {
+	float: right;
+}
+
+.product-quantity {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
+}
+*/
