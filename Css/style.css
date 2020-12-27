@@ -1,0 +1,108 @@
+/*import font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Roboto:wght@100;300&family=Sofia&display=swap');
+
+:root{
+    --light-gray:#2b3032a1;
+    --primary-color:#07051a;
+    --border:#2b303218;
+    --text-color:#ff686b;
+    --roboto:"Roboto" ,sans-serif;
+    --gugi:"Gugi",cursive;
+    --sofia:"Sofia",cursive;
+}
+.bg-primary-color{
+    background-color: var(--primary-color)!important;
+}
+.text-color{
+  color: var(--text-color);
+}
+.font-roboto{
+    font-family:var(--roboto);
+}
+
+header{
+  background-color: var(--primary-color);  
+  font-family: var(--roboto);
+}
+header .site-title{
+    font-family: var(--gugi);
+}
+.container .dropdown-toggle,.container .dropddown-item{
+    font-size:1em;
+    border: 1px;
+    
+}
+.header-links a{
+    font-size:0.9em;
+    text-decoration: none;
+    
+}
+/*navigation-Menu*/
+
+.navbar-nav{
+    padding:0.8em 0em;
+    font:var(--sofia);
+}
+.navbar-nav .nav-link{
+    font-size: 1em;
+    color:var(--primary-color)!important;
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 0 1.3em;
+}
+.navbar-nav .cart-plus{
+    
+    margin-right:11rem!important;
+}
+/*carousel*/
+#carr{
+    padding:40px;
+    height:60%;
+    width:80%;
+}
+/*Slide-two*/
+.site-slider-two .sec-slider{
+    font: var(--gugi);
+    font-size: 2em;
+    font-style: bold;
+}
+.site-slider-two{
+    position:relative;
+}
+.site-slider-two .product{
+    overflow:hidden;
+    position:relative;
+}
+.product .btn{
+    border-radius:20px;
+    
+}
+.site-slider-two .product img {
+    border: radius 0.5;
+    float: left;
+    width:  200px;
+    height: 300px;
+    object-fit: cover;
+}
+/*third */
+
+.site-slider-three .safety img{
+  width:  200px;
+  height: 200px;
+  padding:10px;
+  margin:auto;
+  
+}
+#jumbo .order{
+  padding:10%;
+  margin:auto;
+  height :50px;
+  
+}
+
+#jumbo .jumbotron{
+  background-image:url('./images/order now.jpg');
+  background-size:cover;
+
+}
+

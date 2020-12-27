@@ -1,0 +1,102 @@
+/*import font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Roboto:wght@100;300&family=Sofia&display=swap');
+
+:root{
+    --light-gray:#2b3032a1;
+    --primary-color:#07051a;
+    --border:#2b303218;
+    --text-color:#ff686b;
+    --roboto:"Roboto" ,sans-serif;
+    --gugi:"Gugi",cursive;
+    --sofia:"Sofia",cursive;
+}
+.bg-primary-color{
+    background-color: var(--primary-color)!important;
+}
+.text-color{
+  color: var(--text-color);
+}
+.font-roboto{
+    font-family:var(--roboto);
+}
+
+header{
+  background-color: var(--primary-color);  
+  font-family: var(--roboto);
+}
+header .site-title{
+    font-family: var(--gugi);
+}
+.container .dropdown-toggle,.container .dropddown-item{
+    font-size:1em;
+    border: 1px;
+    
+}
+.header-links a{
+    font-size:0.9em;
+    text-decoration: none;
+    
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    top:0px;
+    background-color: #07051a;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  .sidebar-j{
+    padding-top: 90px;
+  }
+  /* Sidebar links */
+  .sidebar a {
+    padding-top: 100px;
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-image: linear-gradient(to bottom, #66ffff, powderblue)!important ;
+    color: black;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  .img-col{
+    width: 50px;
+    height: 50px;
+  }
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
